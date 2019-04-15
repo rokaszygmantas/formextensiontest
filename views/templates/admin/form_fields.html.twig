@@ -1,0 +1,5 @@
+{% import '@PrestaShop/Admin/macros.html.twig' as ps %}
+
+{% for field in custom_fields %}
+  {{ ps.form_group_row(field, {}, { label: field.vars.label }) }}
+{% endfor %}
